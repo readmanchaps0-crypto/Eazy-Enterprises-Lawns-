@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eazy Enterprises Lawns | Green Made Eazy</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #173b26;
+  background: #f7faf5;
+  line-height: 1.6;
+}
+
+header {
+  background: #123d25;
+  color: white;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #f28c28;
+}
+
+.hero {
+  padding: 75px 7%;
+  text-align: center;
+  background: linear-gradient(135deg, #e8f5df, #ffffff);
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.05;
+  color: #123d25;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #f28c28;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 18px;
+  color: #52645a;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 24px;
+  margin: 6px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.whatsapp {
+  background: #25D366;
+  color: white;
+}
+
+.quote {
+  background: #f28c28;
+  color: white;
+}
+
+section {
+  padding: 65px 7%;
+}
+
+.title {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 35px;
+  color: #123d25;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+.card h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.price {
+  color: #f28c28;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.services {
+  background: #123d25;
+  color: white;
+}
+
+.services .title {
+  color: white;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service {
+  border: 1px solid rgba(255,255,255,.2);
+  padding: 25px;
+  border-radius: 14px;
+}
+
+.contact {
+  text-align: center;
+  background: #e9f3e4;
+}
+
+.contact h2 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.phone {
+  display: block;
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #123d25;
+}
+
+footer {
+  background: #092519;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+@media(max-width:700px) {
+  .products,
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  header {
+    justify-content: center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    EAZY ENTERPRISES <span>LAWNS</span>
+  </div>
+</header>
+
+<section class="hero">
+
+  <h1>
+    GREEN MADE <span>EAZY.</span>
+  </h1>
+
+  <p>
+    Quality instant lawn supply, delivery and installation
+    for homes, businesses and landscaping projects across Zimbabwe.
+  </p>
+
+  <div class="buttons">
+
+    <a class="btn whatsapp"
+       href="https://wa.me/263784428008?text=Hello%20Eazy%20Enterprises%20Lawns%2C%20I%20would%20like%20a%20quote."
+       target="_blank">
+       WhatsApp Us
+    </a>
+
+    <a class="btn quote" href="#prices">
+       View Prices
+    </a>
+
+  </div>
+
+</section>
+
+<section id="prices">
+
+  <h2 class="title">OUR INSTANT LAWN</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <h3>🌱 Kikuyu</h3>
+      <p>
+        A popular, hardy instant lawn for creating
+        a lush green outdoor space.
+      </p>
+      <div class="price">$2 / m²</div>
+    </div>
+
+    <div class="card">
+      <h3>🌿 Durban</h3>
+      <p>
+        A neat and attractive lawn option for
+        homes and landscaping projects.
+      </p>
+      <div class="price">$5 / m²</div>
+    </div>
+
+    <div class="card">
+      <h3>🍃 Buffalo</h3>
+      <p>
+        A premium instant lawn option for a
+        strong and beautiful finish.
+      </p>
+      <div class="price">$6 / m²</div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="services">
+
+  <h2 class="title">OUR SERVICES</h2>
+
+  <div class="service-grid">
+
+    <div class="service">
+      <h3>🌱 Lawn Supply</h3>
+      <p>
+        Quality instant lawn supplied according
+        to your project requirements.
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>🚚 Delivery</h3>
+      <p>
+        Convenient instant lawn delivery
+        available across Zimbabwe.
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>🛠️ Installation</h3>
+      <p>
+        Professional installation available
+        for a clean finished lawn.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="contact">
+
+  <h2>READY FOR A GREENER YARD?</h2>
+
+  <p>
+    Contact Eazy Enterprises Lawns today
+    for your instant lawn requirements.
+  </p>
+
+  <div class="phone">
+    0784 428 008
+  </div>
+
+  <a class="btn whatsapp"
+     href="https://wa.me/263784428008?text=Hello%20Eazy%20Enterprises%20Lawns%2C%20I%20would%20like%20a%20quote."
+     target="_blank">
+     GET A QUOTE ON WHATSAPP
+  </a>
+
+</section>
+
+<footer>
+
+  <strong>EAZY ENTERPRISES LAWNS</strong>
+
+  <p>Green Made Eazy.</p>
+
+  <p>© 2026 Eazy Enterprises Lawns</p>
+
+</footer>
+
+</body>
+</html>
