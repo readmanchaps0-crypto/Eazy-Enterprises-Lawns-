@@ -420,6 +420,22 @@ function sendQuote(event) {
     "_blank"
   );
 }
+</script><script>
+function calculateLawn() {
+  const price = Number(document.getElementById("calcLawn").value);
+  const area = Number(document.getElementById("calcArea").value);
+
+  if (!area || area <= 0) {
+    document.getElementById("result").innerHTML =
+      "Please enter your lawn area.";
+    return;
+  }
+
+  const total = price * area;
+
+  document.getElementById("result").innerHTML =
+    "Estimated Lawn Cost: $" + total.toFixed(2);
+}
 </script>
 </body>
 </html>
