@@ -297,22 +297,45 @@ style="width:100%;max-width:850px;border-radius:20px;margin-bottom:30px;">
 
 <section class="contact">
 
-  <h2>READY FOR A GREENER YARD?</h2>
+<h2>GET YOUR INSTANT LAWN QUOTE</h2>
 
-  <p>
-    Contact Eazy Enterprises Lawns today
-    for your instant lawn requirements.
-  </p>
+<p>Tell us what you need and we'll send your enquiry straight to WhatsApp.</p>
 
-  <div class="phone">
-    0784 428 008
-  </div>
+<form onsubmit="sendQuote(event)" style="max-width:600px;margin:30px auto;text-align:left;">
 
-  <a class="btn whatsapp"
-     href="https://wa.me/263784428008?text=Hello%20Eazy%20Enterprises%20Lawns%2C%20I%20would%20like%20a%20quote."
-     target="_blank">
-     GET A QUOTE ON WHATSAPP
-  </a>
+<input id="name" type="text" placeholder="Your Name" required
+style="width:100%;padding:15px;margin-bottom:12px;border:1px solid #ccc;border-radius:8px;">
+
+<input id="location" type="text" placeholder="Your Location / Suburb" required
+style="width:100%;padding:15px;margin-bottom:12px;border:1px solid #ccc;border-radius:8px;">
+
+<select id="lawn" required
+style="width:100%;padding:15px;margin-bottom:12px;border:1px solid #ccc;border-radius:8px;">
+
+<option value="">Select Lawn Type</option>
+<option value="Kikuyu">Kikuyu — $2/m²</option>
+<option value="Durban">Durban — $5/m²</option>
+<option value="Buffalo">Buffalo — $6/m²</option>
+
+</select>
+
+<input id="area" type="number" placeholder="Approximate Area (m²)" required
+style="width:100%;padding:15px;margin-bottom:12px;border:1px solid #ccc;border-radius:8px;">
+
+<button type="submit"
+style="width:100%;padding:16px;background:#25D366;color:white;border:0;border-radius:8px;font-size:17px;font-weight:bold;">
+
+GET MY QUOTE ON WHATSAPP
+
+</button>
+
+</form>
+
+<p style="margin-top:15px;font-weight:bold;">
+WhatsApp: 0784 428 008
+</p>
+
+</section>
 
 </section>
 
@@ -325,6 +348,28 @@ style="width:100%;max-width:850px;border-radius:20px;margin-bottom:30px;">
   <p>© 2026 Eazy Enterprises Lawns</p>
 
 </footer>
+<script>
+function sendQuote(event) {
+  event.preventDefault();
 
+  const name = document.getElementById("name").value;
+  const location = document.getElementById("location").value;
+  const lawn = document.getElementById("lawn").value;
+  const area = document.getElementById("area").value;
+
+  const message =
+    "Hello Eazy Enterprises Lawns!%0A%0A" +
+    "I would like a quote.%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Location: " + encodeURIComponent(location) + "%0A" +
+    "Lawn Type: " + encodeURIComponent(lawn) + "%0A" +
+    "Approx. Area: " + encodeURIComponent(area) + " m²";
+
+  window.open(
+    "https://wa.me/263784428008?text=" + message,
+    "_blank"
+  );
+}
+</script>
 </body>
 </html>
